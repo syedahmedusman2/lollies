@@ -1,5 +1,5 @@
 import React from "react"
-// import Lolly from './../component/Lolly';
+import Lolly from './../component/Lolly';
 import './../styles/main.css'
 
 export default function Header() {
