@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import Header from "../components/header"
-import Lolly from "../components/Lolly"
+import Header from './../component/Header'
+import Lolly from "./../component/Lolly"
 import { useMutation } from "@apollo/client"
 import gql from "graphql-tag"
 import shortid from "shortid"

@@ -1,7 +1,7 @@
 import React from "react"
 import Lolly from './../Lolly';
 import gql from "graphql-tag"
-import Header from "../header"
+import Header from "./../Header"
 import { Link } from "gatsby"
 import { useQuery } from "@apollo/client"
 
