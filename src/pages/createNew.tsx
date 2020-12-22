@@ -9,21 +9,21 @@ import { navigate } from "gatsby"
 const createLollyMutation = gql`
   mutation createLolly(
     $recipientName: String!
-    $sendersName: String!
+    $senderName: String!
     $message: String!
-    $flavorTop: String!
-    $flavorMid: String!
-    $flavorBot: String!
-    $lollyPath: String!
+    $topColor: String!
+    $mediumColor: String!
+    $bottomColor: String!
+    $path: String!
   ) {
     createLolly(
       recipientName: $recipientName
-      sendersName: $sendersName
+      senderName: $senderName
       message: $message
-      flavorTop: $flavorTop
-      flavorMid: $flavorMid
-      flavorBot: $flavorBot
-      lollyPath: $lollyPath
+      topColor: $topColor
+      mediumColor: $mediumColor
+      bottomColor: $bottomColor
+      lollyPath: $path
     ) {
       message
       lollyPath
@@ -44,20 +44,20 @@ export default function CreateNew() {
 
   const handleSubmit = async () => {
     setLoading(true)
-    const id = shortid.generate()
+    const slug = shortid.generate()
     const result = await createLolly({
       variables: {
         recipientName: recipentName,
-        sendersName: senderName,
+        senderName: senderName,
         message: message,
-        flavorTop: flavourTop,
-        flavorMid: flavourMiddle,
-        flavorBot: flavourEnd,
-        lollyPath: id,
+        topColor: flavourTop,
+        mediumColor: flavourMiddle,
+        bottomColor: flavourEnd,
+        Path: slug.toString()  
       },
     })
     setLoading(false)
-    navigate(`/lollies/${id}`)
+    await navigate(`/lolly/${slug}`);
   }
 
   return (
