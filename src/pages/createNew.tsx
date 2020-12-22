@@ -119,10 +119,12 @@ export default function CreateNew() {
             onChange={e => setSenderName(e.target.value)}
           />
           <div className="formBtn-wrapper">
-            <button onClick={handleSubmit}>
-            {/* onClick={()=>{ */}
-      {/* // navigate("/NewPage") */}
-    {/* // }} */}
+            <button onClick={()=>{
+      { navigate("/LollyPage")}
+     }}>
+            {/* onClick={()=>{
+      { navigate("/LollyPage")}
+     }} */}
               {loading ? "freeze..." : "freeze"}
             </button>
           </div>
