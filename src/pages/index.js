@@ -23,6 +23,6 @@ export default function Home() {
     <input type="button" value="Create New Lolly"
     onClick={()=>{
       navigate("/createNew")
-    }}></input>
+    }} className="button"></input>
   </div>
 }

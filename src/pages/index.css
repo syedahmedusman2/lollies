@@ -5,3 +5,11 @@
     justify-content: center;
     margin-top: 15px;
 }
+
+.button {
+    background-color: palevioletred;
+    color: white;
+    justify-content: center;
+    border-radius: 50%;
+
+}
