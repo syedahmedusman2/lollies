@@ -21,7 +21,7 @@ export default function LollyPage(lolly) {
         />
 
         <div className="recievedTextContainer">
-          <h3>HELLO {pageContext.lolly.recipientName}</h3>
+          <h3>HI {pageContext.lolly.recipientName}</h3>
           <p>{pageContext.lolly.message}</p>
           <h4>From: {pageContext.lolly.senderName}</h4>
         </div>
