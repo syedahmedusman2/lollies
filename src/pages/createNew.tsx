@@ -63,6 +63,7 @@ export default function CreateNew() {
   return (
     <div className="container">
       <Header />
+      
       <div className="lollyContainer">
         <div>
           <Lolly
@@ -118,7 +119,9 @@ export default function CreateNew() {
             onChange={e => setSenderName(e.target.value)}
           />
           <div className="formBtn-wrapper">
-            <button onClick={handleSubmit}>
+            <button onClick={()=>{
+      navigate("/NewPage")
+    }}>
               {loading ? "freeze..." : "freeze"}
             </button>
           </div>
