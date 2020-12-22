@@ -1,0 +1,4 @@
+.listLollies {
+    display: flex;
+    flex-direction: row;
+}

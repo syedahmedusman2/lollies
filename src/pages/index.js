@@ -3,6 +3,7 @@ import Lolly from './../component/Lolly';
 import './../styles/main.css'
 import Header from './../component/Header';
 import { navigate } from "gatsby";
+import './index.css'
 
 export default function Home() {
   return <div className="container" >
