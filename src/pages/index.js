@@ -16,6 +16,8 @@ export default function Home() {
       <div>
       <Lolly fillLollyTop="red" fillLollyMiddle="orange" fillLollyBottom="blue"/>
   </div>
+  <div><Lolly fillLollyTop="green" fillLollyMiddle="purple" fillLollyBottom="red"/></div>
+  <div><Lolly fillLollyTop="yellow" fillLollyMiddle="blue" fillLollyBottom="pink"/></div>
     
     </div>
     <input type="button" value="Create New Lolly"
