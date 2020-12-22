@@ -15,5 +15,9 @@
     height: 150px;
     width: 300px;
     text-align: center;
+    transform: translate(-50%, -50%);
+    justify-items: center;
+    margin: auto;
+    position: absolute;
 
 }
