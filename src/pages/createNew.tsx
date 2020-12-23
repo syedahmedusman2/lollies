@@ -57,7 +57,7 @@ export default function CreateNew() {
       },
     })
     setLoading(false)
-    await navigate(`/lolly/${slug}`);
+    await navigate(`/LollyPage${slug}`);
   }
 
   return (
@@ -119,9 +119,7 @@ export default function CreateNew() {
             onChange={e => setSenderName(e.target.value)}
           />
           <div className="formBtn-wrapper">
-            <button onClick={()=>{
-      { navigate("/LollyPage")}
-     }}>
+            <button onClick={handleSubmit}>
             {/* onClick={()=>{
       { navigate("/LollyPage")}
      }} */}
