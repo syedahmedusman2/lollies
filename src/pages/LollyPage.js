@@ -14,11 +14,11 @@ export default function LollyPage(lolly) {
         {`https://eloquent-villani-d3e592.netlify.app${location.pathname}/`}
       </span>
       <div className="recievedContentContainer">
-        <Lolly
-          // fillLollyTop={pageContext.lolly.topColor}
+        {/* <Lolly
+          fillLollyTop={pageContext.lolly.topColor}
           fillLollyMiddle={pageContext.lolly.mediumColor}
           fillLollyBottom={pageContext.lolly.bottomColor}
-        />
+        /> */}
 
         <div className="recievedTextContainer">
           <h3>HI {pageContext.lolly.recipientName}</h3>
