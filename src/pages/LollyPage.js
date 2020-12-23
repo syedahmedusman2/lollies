@@ -15,9 +15,9 @@ export default function LollyPage(lolly) {
       </span>
       <div className="recievedContentContainer">
         <Lolly
-          fillLollyTop={pageContext.lolly.topColor}
-          fillLollyMiddle={pageContext.lolly.mediumColor}
-          fillLollyBottom={pageContext.lolly.bottomColor}
+          fillLollyTop={pageContext.lolly.flavourTop}
+          fillLollyMiddle={pageContext.lolly.flavourMiddle}
+          fillLollyBottom={pageContext.lolly.flavourEnd}
         />
 
         <div className="recievedTextContainer">
