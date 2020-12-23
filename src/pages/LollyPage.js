@@ -14,7 +14,7 @@ export default function LollyPage(lolly) {
         {`https://eloquent-villani-d3e592.netlify.app${location.pathname}/`}
       </span>
       <div className="recievedContentContainer">
-        <Lolly
+        {/* <Lolly
           fillLollyTop={pageContext.lolly.topColor}
           fillLollyMiddle={pageContext.lolly.mediumColor}
           fillLollyBottom={pageContext.lolly.bottomColor}
@@ -24,7 +24,7 @@ export default function LollyPage(lolly) {
           <h3>HI {pageContext.lolly.recipientName}</h3>
           <p>{pageContext.lolly.message}</p>
           <h4>From: {pageContext.lolly.senderName}</h4>
-        </div>
+        </div> */}
       </div>
     </div>
   );
