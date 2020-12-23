@@ -1,6 +1,6 @@
 import React from "react";
 import Lolly from './../component/Lolly'
-import './../styles'
+import './../styles/main.css'
 
 export default function LollyPage(lolly) {
 
