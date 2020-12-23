@@ -1,6 +1,6 @@
 import React from "react";
 import Lolly from './../component/Lolly'
-import './../styles/main.css'
+import './../styles'
 
 export default function LollyPage(lolly) {
 
@@ -15,9 +15,9 @@ export default function LollyPage(lolly) {
       </span>
       <div className="recievedContentContainer">
         <Lolly
-          fillLollyTop={pageContext.lolly.flavourTop}
-          fillLollyMiddle={pageContext.lolly.flavourMiddle}
-          fillLollyBottom={pageContext.lolly.flavourEnd}
+          fillLollyTop={pageContext.lolly.topColor}
+          fillLollyMiddle={pageContext.lolly.mediumColor}
+          fillLollyBottom={pageContext.lolly.bottomColor}
         />
 
         <div className="recievedTextContainer">
